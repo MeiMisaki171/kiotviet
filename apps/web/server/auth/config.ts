@@ -97,18 +97,25 @@ export const authConfig: NextAuthConfig = {
     },
     async authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
-      const isOnDashboard = nextUrl.pathname.startsWith("/dashboard");
-      const isOnSignIn = nextUrl.pathname === "/sign-in";
+      const pathname = nextUrl.pathname;
+      
+      // Public routes - không cần auth
+      const publicRoutes = ["/home", "/sign-in", "/"];
+      const isPublicRoute = publicRoutes.some(route => pathname === route || pathname.startsWith("/home"));
+
+      // Protected routes - cần auth  
+      const isOnDashboard = pathname.startsWith("/dashboard");
 
       if (isOnDashboard) {
         if (isLoggedIn) return true;
         return false; // Redirect to sign-in
       }
 
-      if (isOnSignIn && isLoggedIn) {
+      if (pathname === "/sign-in" && isLoggedIn) {
         return Response.redirect(new URL("/dashboard", nextUrl));
       }
 
+      // Allow all public routes
       return true;
     },
   },
