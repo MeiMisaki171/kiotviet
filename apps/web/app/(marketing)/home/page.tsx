@@ -107,7 +107,7 @@ export default function HomePage() {
       <MarketingHeader />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20 lg:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 py-20 lg:py-32">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-30">
           <div
@@ -122,17 +122,17 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="text-center lg:text-left">
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-green-100 px-4 py-1.5 text-sm font-medium text-green-700">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-medium text-[#0060d4]">
                 <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600"></span>
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75"></span>
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[#0070f4]"></span>
                 </span>
                 300,000+ nhà kinh doanh tin dùng
               </div>
 
               <h1 className="mb-6 text-4xl font-bold leading-tight text-slate-900 lg:text-6xl">
                 Phần mềm{" "}
-                <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#0070f4] to-[#0060d4] bg-clip-text text-transparent">
                   quản lý bán hàng
                 </span>{" "}
                 phổ biến nhất
@@ -147,7 +147,7 @@ export default function HomePage() {
                 <Link href="/sign-in">
                   <Button
                     size="lg"
-                    className="w-full bg-gradient-to-r from-green-500 to-emerald-600 px-8 text-white shadow-xl shadow-green-500/30 hover:from-green-600 hover:to-emerald-700 sm:w-auto"
+                    className="w-full bg-gradient-to-r from-[#0070f4] to-[#0060d4] px-8 text-white shadow-xl shadow-[#0070f4]/30 hover:from-[#0060d4] hover:to-[#0050c4] sm:w-auto"
                   >
                     Dùng thử miễn phí
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -169,14 +169,14 @@ export default function HomePage() {
 
             {/* Hero Image/Illustration */}
             <div className="relative hidden lg:block">
-              <div className="relative rounded-2xl bg-white p-6 shadow-2xl shadow-green-500/10">
+              <div className="relative rounded-2xl bg-white p-6 shadow-2xl shadow-[#0070f4]/10">
                 <div className="mb-4 flex items-center gap-3">
                   <div className="h-3 w-3 rounded-full bg-red-400" />
                   <div className="h-3 w-3 rounded-full bg-yellow-400" />
-                  <div className="h-3 w-3 rounded-full bg-green-400" />
+                  <div className="h-3 w-3 rounded-full bg-blue-400" />
                 </div>
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 p-4 text-white">
+                  <div className="flex items-center justify-between rounded-lg bg-gradient-to-r from-[#0070f4] to-[#0060d4] p-4 text-white">
                     <div>
                       <p className="text-sm opacity-80">Doanh thu hôm nay</p>
                       <p className="text-2xl font-bold">125,430,000đ</p>
@@ -193,9 +193,9 @@ export default function HomePage() {
                       <p className="text-xl font-bold text-slate-900">8,492</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3 rounded-lg border border-green-200 bg-green-50 p-3">
-                    <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span className="text-sm text-green-700">
+                  <div className="flex items-center gap-3 rounded-lg border border-blue-200 bg-blue-50 p-3">
+                    <CheckCircle className="h-5 w-5 text-[#0070f4]" />
+                    <span className="text-sm text-[#0060d4]">
                       Đơn hàng #DH001 đã hoàn thành
                     </span>
                   </div>
@@ -231,7 +231,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
             {stats.map((stat, i) => (
               <div key={i} className="text-center">
-                <p className="text-3xl font-bold text-green-600 lg:text-4xl">
+                <p className="text-3xl font-bold text-[#0070f4] lg:text-4xl">
                   {stat.value}
                 </p>
                 <p className="mt-1 text-sm text-slate-600">{stat.label}</p>
@@ -247,7 +247,7 @@ export default function HomePage() {
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-slate-900 lg:text-4xl">
               Phần mềm chuyên biệt cho{" "}
-              <span className="text-green-600">từng ngành hàng</span>
+              <span className="text-[#0070f4]">từng ngành hàng</span>
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-slate-600">
               Chúng tôi thiết kế giải pháp riêng biệt, tối ưu cho đặc thù kinh
@@ -259,9 +259,9 @@ export default function HomePage() {
             {industries.map((industry, i) => (
               <div
                 key={i}
-                className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-green-200 hover:shadow-xl hover:shadow-green-500/10"
+                className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-blue-200 hover:shadow-xl hover:shadow-[#0070f4]/10"
               >
-                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 text-white transition-transform group-hover:scale-110">
+                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-[#0070f4] to-[#0060d4] text-white transition-transform group-hover:scale-110">
                   <industry.icon className="h-7 w-7" />
                 </div>
                 <h3 className="mb-2 text-lg font-semibold text-slate-900">
@@ -283,7 +283,7 @@ export default function HomePage() {
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-white lg:text-4xl">
               Giải pháp kinh doanh{" "}
-              <span className="text-green-400">toàn diện</span>
+              <span className="text-[#60a5fa]">toàn diện</span>
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-slate-400">
               Tích hợp đầy đủ các công cụ giúp bạn vận hành kinh doanh hiệu quả
@@ -294,9 +294,9 @@ export default function HomePage() {
             {solutions.map((solution, i) => (
               <div
                 key={i}
-                className="rounded-2xl border border-slate-700 bg-slate-800/50 p-6 backdrop-blur-sm transition-all hover:border-green-500/50 hover:bg-slate-800"
+                className="rounded-2xl border border-slate-700 bg-slate-800/50 p-6 backdrop-blur-sm transition-all hover:border-[#0070f4]/50 hover:bg-slate-800"
               >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-green-500/20 text-green-400">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/20 text-[#60a5fa]">
                   <solution.icon className="h-6 w-6" />
                 </div>
                 <h3 className="mb-2 text-lg font-semibold text-white">
@@ -311,7 +311,7 @@ export default function HomePage() {
             <Link href="/sign-in">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-lg shadow-green-500/25 hover:from-green-600 hover:to-emerald-700"
+                className="bg-gradient-to-r from-[#0070f4] to-[#0060d4] text-white shadow-lg shadow-[#0070f4]/25 hover:from-[#0060d4] hover:to-[#0050c4]"
               >
                 Bắt đầu dùng thử miễn phí
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -326,7 +326,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="flex flex-col items-center justify-center gap-6 lg:flex-row lg:gap-12">
             <div className="flex items-center gap-3">
-              <Shield className="h-10 w-10 text-green-600" />
+              <Shield className="h-10 w-10 text-[#0070f4]" />
               <div>
                 <p className="font-semibold text-slate-900">
                   Bảo mật dữ liệu ISO 27001
@@ -338,7 +338,7 @@ export default function HomePage() {
             </div>
             <div className="hidden h-8 w-px bg-slate-200 lg:block" />
             <div className="flex items-center gap-3">
-              <Users className="h-10 w-10 text-green-600" />
+              <Users className="h-10 w-10 text-[#0070f4]" />
               <div>
                 <p className="font-semibold text-slate-900">1,000+ nhân sự</p>
                 <p className="text-sm text-slate-500">
@@ -356,7 +356,7 @@ export default function HomePage() {
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-slate-900 lg:text-4xl">
               Khách hàng nói gì về{" "}
-              <span className="text-green-600">KiotViet</span>
+              <span className="text-[#0070f4]">KiotViet</span>
             </h2>
           </div>
 
@@ -391,13 +391,13 @@ export default function HomePage() {
       </section>
 
       {/* Mobile Apps */}
-      <section className="bg-gradient-to-br from-green-50 to-emerald-50 py-20">
+      <section className="bg-gradient-to-br from-blue-50 to-sky-50 py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <h2 className="mb-4 text-3xl font-bold text-slate-900 lg:text-4xl">
                 Trải nghiệm ứng dụng KiotViet trên{" "}
-                <span className="text-green-600">điện thoại</span>
+                <span className="text-[#0070f4]">điện thoại</span>
               </h2>
               <p className="mb-8 text-lg text-slate-600">
                 Quản lý cửa hàng mọi lúc mọi nơi với ứng dụng di động KiotViet
@@ -424,11 +424,11 @@ export default function HomePage() {
                 <div className="h-80 w-40 rounded-3xl bg-slate-900 p-2 shadow-2xl">
                   <div className="flex h-full w-full flex-col rounded-2xl bg-white">
                     <div className="flex items-center justify-between border-b p-3">
-                      <Store className="h-5 w-5 text-green-600" />
+                      <Store className="h-5 w-5 text-[#0070f4]" />
                       <span className="text-xs font-medium">KiotViet</span>
                     </div>
                     <div className="flex-1 p-3">
-                      <div className="mb-3 rounded-lg bg-green-500 p-3 text-white">
+                      <div className="mb-3 rounded-lg bg-blue-500 p-3 text-white">
                         <p className="text-xs">Doanh thu</p>
                         <p className="text-lg font-bold">125.4M</p>
                       </div>
@@ -446,18 +446,18 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-green-600 to-emerald-600 py-16">
+      <section className="bg-gradient-to-r from-[#0070f4] to-[#0060d4] py-16">
         <div className="mx-auto max-w-4xl px-4 text-center lg:px-8">
           <h2 className="mb-4 text-3xl font-bold text-white lg:text-4xl">
             Hãy để KiotViet đồng hành kinh doanh cùng bạn
           </h2>
-          <p className="mb-8 text-lg text-green-100">
+          <p className="mb-8 text-lg text-blue-100">
             Bắt đầu dùng thử miễn phí 7 ngày ngay hôm nay
           </p>
           <Link href="/sign-in">
             <Button
               size="lg"
-              className="bg-white px-8 text-green-600 shadow-xl hover:bg-green-50"
+              className="bg-white px-8 text-[#0070f4] shadow-xl hover:bg-blue-50"
             >
               Dùng thử miễn phí
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -472,7 +472,7 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div>
               <div className="mb-4 flex items-center gap-2">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-green-500 to-emerald-600">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#0070f4] to-[#0060d4]">
                   <Store className="h-5 w-5 text-white" />
                 </div>
                 <span className="text-xl font-bold">KiotViet</span>
@@ -483,19 +483,19 @@ export default function HomePage() {
               <div className="flex gap-3">
                 <a
                   href="#"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 text-slate-400 transition-colors hover:bg-green-600 hover:text-white"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 text-slate-400 transition-colors hover:bg-[#0060d4] hover:text-white"
                 >
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
                   href="#"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 text-slate-400 transition-colors hover:bg-green-600 hover:text-white"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 text-slate-400 transition-colors hover:bg-[#0060d4] hover:text-white"
                 >
                   <Youtube className="h-5 w-5" />
                 </a>
                 <a
                   href="#"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 text-slate-400 transition-colors hover:bg-green-600 hover:text-white"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 text-slate-400 transition-colors hover:bg-[#0060d4] hover:text-white"
                 >
                   <MessageCircle className="h-5 w-5" />
                 </a>
@@ -558,15 +558,15 @@ export default function HomePage() {
               <h4 className="mb-4 font-semibold">Liên hệ</h4>
               <ul className="space-y-3 text-sm text-slate-400">
                 <li className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-green-500" />
+                  <Phone className="h-4 w-4 text-[#0070f4]" />
                   <span>1800 6162</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-green-500" />
+                  <Mail className="h-4 w-4 text-[#0070f4]" />
                   <span>support@kiotviet.vn</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 text-green-500" />
+                  <MapPin className="h-4 w-4 text-[#0070f4]" />
                   <span>Tầng 3-6, số 1A Yết Kiêu, Hà Nội</span>
                 </li>
               </ul>

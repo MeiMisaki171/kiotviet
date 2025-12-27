@@ -93,12 +93,12 @@ const productCategories = [
 ];
 
 const solutionItems = [
-  { icon: Globe, label: "Đồng bộ sàn TMĐT", color: "text-green-600" },
+  { icon: Globe, label: "Đồng bộ sàn TMĐT", color: "text-[#0070f4]" },
   { icon: MonitorSmartphone, label: "Tạo Website bán hàng", color: "text-blue-600" },
   { icon: Truck, label: "Vận chuyển dễ dàng", color: "text-cyan-600" },
   { icon: Facebook, label: "Liên kết bán hàng Facebook", color: "text-blue-700" },
   { icon: CreditCard, label: "Thiết bị bán hàng", color: "text-purple-600" },
-  { icon: Receipt, label: "Hóa đơn điện tử", color: "text-emerald-600" },
+  { icon: Receipt, label: "Hóa đơn điện tử", color: "text-[#0070f4]" },
   { icon: Calculator, label: "Phần mềm kế toán", color: "text-indigo-600" },
 ];
 
@@ -110,11 +110,11 @@ export function MarketingHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link href="/home" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-green-500 to-emerald-600">
-            <Store className="h-5 w-5 text-white" />
-          </div>
-          <span className="text-xl font-bold text-slate-900">KiotViet</span>
-        </Link>
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#0070f4]">
+              <Store className="h-5 w-5 text-white" />
+            </div>
+            <span className="text-xl font-bold text-slate-900">KiotViet</span>
+          </Link>
 
         {/* Navigation */}
         <nav className="hidden items-center gap-1 lg:flex">
@@ -124,7 +124,7 @@ export function MarketingHeader() {
             onMouseEnter={() => setActiveDropdown("products")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-green-600">
+            <button className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-[#0070f4]">
               Sản phẩm
               <ChevronDown className="h-4 w-4" />
             </button>
@@ -149,7 +149,7 @@ export function MarketingHeader() {
                             <li key={j}>
                               <a
                                 href="#"
-                                className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm text-slate-600 transition-colors hover:bg-slate-50 hover:text-green-600"
+                                className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm text-slate-600 transition-colors hover:bg-slate-50 hover:text-[#0070f4]"
                               >
                                 <item.icon className="h-4 w-4 text-slate-400" />
                                 {item.label}
@@ -163,8 +163,8 @@ export function MarketingHeader() {
                     {/* Giải pháp tiện ích */}
                     <div>
                       <div className="mb-4 flex items-center gap-2">
-                        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-100">
-                          <Globe className="h-4 w-4 text-green-600" />
+                        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-100">
+                          <Globe className="h-4 w-4 text-[#0070f4]" />
                         </div>
                         <span className="font-semibold text-slate-900">
                           Giải pháp tiện ích
@@ -175,7 +175,7 @@ export function MarketingHeader() {
                           <li key={j}>
                             <a
                               href="#"
-                              className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm text-slate-600 transition-colors hover:bg-slate-50 hover:text-green-600"
+                              className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm text-slate-600 transition-colors hover:bg-slate-50 hover:text-[#0070f4]"
                             >
                               <item.icon className={`h-4 w-4 ${item.color}`} />
                               {item.label}
@@ -196,7 +196,7 @@ export function MarketingHeader() {
             onMouseEnter={() => setActiveDropdown("solutions")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-green-600">
+            <button className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-[#0070f4]">
               Giải pháp
               <ChevronDown className="h-4 w-4" />
             </button>
@@ -209,7 +209,7 @@ export function MarketingHeader() {
                       <li key={j}>
                         <a
                           href="#"
-                          className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-slate-600 transition-colors hover:bg-slate-50 hover:text-green-600"
+                          className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-slate-600 transition-colors hover:bg-slate-50 hover:text-[#0070f4]"
                         >
                           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-slate-100">
                             <item.icon className={`h-4 w-4 ${item.color}`} />
@@ -226,35 +226,35 @@ export function MarketingHeader() {
 
           <Link
             href="#"
-            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-green-600"
+            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-[#0070f4]"
           >
             Khách hàng
           </Link>
 
           <Link
             href="#"
-            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-green-600"
+            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-[#0070f4]"
           >
             Phí dịch vụ
           </Link>
 
           <Link
             href="#"
-            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-green-600"
+            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-[#0070f4]"
           >
             Hỗ trợ
           </Link>
 
           <Link
             href="#"
-            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-green-600"
+            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-[#0070f4]"
           >
             Tin tức
           </Link>
 
           <Link
             href="#"
-            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-green-600"
+            className="rounded-lg px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-100 hover:text-[#0070f4]"
           >
             Về KiotViet
           </Link>
@@ -265,13 +265,13 @@ export function MarketingHeader() {
           <Link href="/sign-in">
             <Button
               variant="outline"
-              className="border-green-500 text-green-600 hover:bg-green-50 hover:text-green-700"
+              className="border-[#0070f4] text-[#0070f4] hover:bg-blue-50 hover:text-[#0060d4]"
             >
               Đăng nhập
             </Button>
           </Link>
           <Link href="/sign-in">
-            <Button className="bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-lg shadow-green-500/25 hover:from-green-600 hover:to-emerald-700">
+            <Button className="bg-[#0070f4] text-white shadow-lg shadow-[#0070f4]/25 hover:bg-[#0060d4]">
               Đăng ký
             </Button>
           </Link>

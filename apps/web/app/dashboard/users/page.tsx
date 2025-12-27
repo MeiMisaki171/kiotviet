@@ -124,7 +124,7 @@ export default function UsersPage() {
                       <span
                         className={`inline-flex rounded-full px-2.5 py-0.5 text-xs font-medium ${
                           user.status === "active"
-                            ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400"
+                            ? "bg-blue-100 text-[#0070f4] dark:bg-blue-900/30 dark:text-blue-400"
                             : "bg-slate-100 text-slate-600 dark:bg-slate-700 dark:text-slate-400"
                         }`}
                       >

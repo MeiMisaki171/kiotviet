@@ -137,7 +137,7 @@ export default function SettingsPage() {
         <Card className="border-none bg-white shadow-md dark:bg-slate-900 lg:col-span-2">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-emerald-600" />
+              <Shield className="h-5 w-5 text-[#0070f4]" />
               Bảo mật
             </CardTitle>
             <CardDescription>
@@ -166,7 +166,7 @@ export default function SettingsPage() {
               </div>
             </div>
             {canEdit && (
-              <Button className="mt-4 bg-gradient-to-r from-emerald-500 to-teal-600">
+              <Button className="mt-4 bg-[#0070f4] hover:bg-[#0060d4]">
                 <Save className="mr-2 h-4 w-4" />
                 Cập nhật cài đặt bảo mật
               </Button>

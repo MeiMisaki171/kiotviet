@@ -32,7 +32,7 @@ export default function ReportsPage() {
 
         <Card className="cursor-pointer border-none bg-white shadow-md transition-all hover:shadow-lg dark:bg-slate-900">
           <CardHeader>
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0070f4]">
               <TrendingUp className="h-6 w-6 text-white" />
             </div>
             <CardTitle className="mt-4">Báo cáo bán hàng</CardTitle>

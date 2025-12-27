@@ -24,7 +24,7 @@ export default async function DashboardPage() {
       value: "125,430,000đ",
       change: "+12.5%",
       icon: DollarSign,
-      color: "from-emerald-500 to-teal-600",
+      color: "from-[#0070f4] to-[#0060d4]",
     },
     {
       title: "Đơn hàng",
@@ -88,7 +88,7 @@ export default async function DashboardPage() {
               <div className="text-2xl font-bold text-slate-900 dark:text-slate-100">
                 {stat.value}
               </div>
-              <p className="mt-1 flex items-center text-xs text-emerald-600">
+              <p className="mt-1 flex items-center text-xs text-[#0070f4]">
                 <TrendingUp className="mr-1 h-3 w-3" />
                 {stat.change} so với tháng trước
               </p>
@@ -129,7 +129,7 @@ export default async function DashboardPage() {
                     <p className="font-medium text-slate-900 dark:text-slate-100">
                       {(i * 150000).toLocaleString()}đ
                     </p>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-medium text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">
+                    <span className="inline-flex items-center rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-[#0070f4] dark:bg-blue-900/30 dark:text-blue-400">
                       Hoàn thành
                     </span>
                   </div>
