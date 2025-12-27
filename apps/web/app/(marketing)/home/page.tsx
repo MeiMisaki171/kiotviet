@@ -24,6 +24,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { MarketingHeader } from "@/components/marketing/header";
 
 const industries = [
   {
@@ -102,57 +103,8 @@ const testimonials = [
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:px-8">
-          <Link href="/home" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-green-500 to-emerald-600">
-              <Store className="h-5 w-5 text-white" />
-            </div>
-            <span className="text-xl font-bold text-slate-900">KiotViet</span>
-          </Link>
-
-          <nav className="hidden items-center gap-8 md:flex">
-            <Link
-              href="#features"
-              className="text-sm font-medium text-slate-600 transition-colors hover:text-green-600"
-            >
-              Sản phẩm
-            </Link>
-            <Link
-              href="#solutions"
-              className="text-sm font-medium text-slate-600 transition-colors hover:text-green-600"
-            >
-              Giải pháp
-            </Link>
-            <Link
-              href="#pricing"
-              className="text-sm font-medium text-slate-600 transition-colors hover:text-green-600"
-            >
-              Phí dịch vụ
-            </Link>
-            <Link
-              href="#support"
-              className="text-sm font-medium text-slate-600 transition-colors hover:text-green-600"
-            >
-              Hỗ trợ
-            </Link>
-          </nav>
-
-          <div className="flex items-center gap-3">
-            <Link href="/sign-in">
-              <Button variant="ghost" className="text-slate-700">
-                Đăng nhập
-              </Button>
-            </Link>
-            <Link href="/sign-in">
-              <Button className="bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-lg shadow-green-500/25 hover:from-green-600 hover:to-emerald-700">
-                Dùng thử miễn phí
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </header>
+      {/* Header with Dropdown Menu */}
+      <MarketingHeader />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20 lg:py-32">
